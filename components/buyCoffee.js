@@ -13,7 +13,7 @@ const BuyCoffee = ({ messages }) => {
 
     console.log(router.query);
 
-    const [activeNumber, setActiveNumber] = useState(quantity || 3);
+    const [activeNumber, setActiveNumber] = useState(quantity || 1);
 
     useEffect(() => {
         console.log('rendering...');
@@ -61,7 +61,7 @@ const BuyCoffee = ({ messages }) => {
                     </li>
                     <li className="button">
                         <a href={`${profileData.gumroadProductURL}?quantity=${activeNumber}&wanted=true`}>
-                            Support ${activeNumber * 5}
+                            Support ${activeNumber * 1}
                         </a>
                     </li>
                 </ul>
